@@ -1,3 +1,9 @@
 # Write a Python program that accepts a single-digit integer (n) and computes the value of n+nn+nnn.
-# Eg. if n = 5, then 5 + 55 + 555 = 615
+#
+# Eg.
+# Enter a number: 5
+# Computed value: 615
+#
+# Explanation:
+# 5 + 55 + 555 = 615
 
