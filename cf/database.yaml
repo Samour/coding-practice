@@ -56,15 +56,15 @@ Resources:
   Database:
     Type: AWS::RDS::DBInstance
     Properties:
-      AllocatedStorage : 50
-      DBInstanceClass : db.t4g.small
+      AllocatedStorage: 50
+      DBInstanceClass: db.t4g.small
       DBInstanceIdentifier: !Ref InstanceName
       DBParameterGroupName: !Ref DbParameterGroup
       DBSubnetGroupName: !Ref DbSubnetGroup
-      Engine : postgres
+      Engine: postgres
       EngineVersion: 14.2
-      MasterUsername : !Ref RootUser
-      MasterUserPassword : !Ref RootPassword
+      MasterUsername: !Ref RootUser
+      MasterUserPassword: !Ref RootPassword
       PubliclyAccessible: True
       StorageType: gp2
       VPCSecurityGroups:
