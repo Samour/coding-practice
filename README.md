@@ -1,17 +1,15 @@
-# Connecting to PostgreSQL server
+# Running Postgres locally
 
-Connection URL: `sql-learn-pg.csy1idkfvupb.ap-southeast-2.rds.amazonaws.com:5432`
+**Start DB**
 
-TLS1.2 is enforced
+`docker compose up`
 
-If you are using a secrets file, you can load your username/password by running
+**Stop DB**
 
-```
-source .secrets
-```
+Ctrl + C in the terminal if following process
 
-Connection command:
+Otherwise, type
 
-```
-psql -h sql-learn-pg.csy1idkfvupb.ap-southeast-2.rds.amazonaws.com -p 5432 "dbname=playdb user=$DB_USERNAME password=$DB_PASSWORD sslrootcert=global-bundle.pem"
-```
+`docker compose down`
+
+Can also be stopped via docker desktop UI
