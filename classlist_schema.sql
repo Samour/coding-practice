@@ -28,5 +28,5 @@ create table school_class_student(
     constraint fk_class_id foreign key
         (class_id) references school_class(id),
     constraint fk_student_id foreign key
-        (student_id) references (student)
+        (student_id) references student(id)
 );
